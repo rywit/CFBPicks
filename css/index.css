@@ -105,10 +105,12 @@ body{
   width: 100vw;
   height: 100vh;
 
-  background-image: url(../images/background.png);
+
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+/*  background-color: #666666; */
 
   font-family: "fairplex-wide";
   -webkit-font-smoothing: antialiased;
@@ -147,6 +149,14 @@ header img{
 
 
 /* Forms */
+
+.cfbform {
+  background-color: rgba(200, 200, 200, 0.80);
+  padding: 19px;
+  border-radius: 10px;
+  box-shadow: #333 2px 2px 5px;
+  border: 1px solid #333;
+}
 
 .form-wrap{
     width: 35%;
@@ -221,7 +231,7 @@ input[type=text]:valid, input[type=password]:valid {
 input[type=submit] {
     width: 200px;
     background-color: white;
-    color: #f50856;
+    color: #0856f5;
     padding: 14px 20px;
     margin: 8px auto 30px;
     border: none;
@@ -241,32 +251,32 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #dddddd;
-    color: #bb0642;
+    color: #0642bb;
 }
 
 
 ::-webkit-input-placeholder { /* Chrome */
-  color: white;
+  color: #000;
   font-style: italic;
-  opacity: .4;
+  opacity: .5;
 
   font-family: "fairplex-wide";
-  color: white;
+  color: #000;
   font-weight: 400;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: white;
+  color: #000;
   font-style: italic;
-  opacity: .4;
+  opacity: .5;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: white;
-  opacity: .4;
+  color: #000;
+  opacity: .5;
   font-style: italic;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: white;
-  opacity: .4;
+  color: #000;
+  opacity: .5;
   font-style: italic;
 }
 
@@ -277,15 +287,26 @@ input[type=submit]:hover {
 /* Typography */
 
 h1{
-  color: white;
+  color: #2244DD;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   margin: 10px 0;
+  text-shadow: #444 1px 1px 2px;
 }
 
+h2{
+  color: #2244DD;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0;
+  text-shadow: #444 1px 1px 2px;
+}
 
 @media screen and (max-width: 1200px) {
   h1{
