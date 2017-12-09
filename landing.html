@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>CFB</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Serverless web application example">
+        <meta name="author" content="">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
+    
+    </head>
+    
+    <body class="stadium4">
+    
+        <div class="panel-heading">
+            <div class="dropdown pull-right">
+                <button id="accountLink" class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="accountLink">
+                    <li><a id="signOut" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <header>
+          <h1>College Football Picks</h1>
+        </header>
+        <section class="form-wrap">
+            <form id="navForm" class="cfbform">
+                <a href="games.html" class="nav-link"><button type="button" class="nav-button">View Games</button></a>
+                <a href="picks.html" class="nav-link"><button type="button" class="nav-button">Make Picks</button></a>
+            </form>
+        </section>
+    
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+    </body>
+
+</html>

@@ -123,7 +123,7 @@ var CFBPicks = window.CFBPicks || {};
         signin( email, password,
             function signinSuccess() {
                 console.log( 'Successfully Logged In' );
-                window.location.href = 'ride.html';
+                window.location.href = 'landing.html';
             },
             function signinError( err ) {
                 alert( err );

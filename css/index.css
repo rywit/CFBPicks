@@ -104,9 +104,6 @@ textarea {
 body{
   width: 100vw;
   height: 100vh;
-
-
-  background-image: url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -117,9 +114,29 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.stadium1 {
+    background-image: url(../images/background1.jpg);
+}
 
+body.stadium2 {
+    background-image: url(../images/background2.jpg);
+}
 
+body.stadium3 {
+    background-image: url(../images/background3.jpg);
+}
 
+body.stadium4 {
+    background-image: url(../images/background4.jpg);
+}
+
+body.stadium5 {
+    background-image: url(../images/background5.jpg);
+}
+
+body.stadium6 {
+    background-image: url(../images/background6.jpg);
+}
 
 /* Logo */
 
@@ -280,6 +297,36 @@ input[type=submit]:hover {
   font-style: italic;
 }
 
+button.nav-button {
+
+    width: 200px;
+    background-color: white;
+    color: #0856f5;
+    padding: 14px 20px;
+    margin: 8px auto 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: block;
+
+    font-family: "fairplex-wide";
+    font-size: 24px;
+    opacity: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.nav-button:hover {
+    background-color: #dddddd;
+    color: #0642bb;
+}
+
+a.nav-link:hover {
+  text-decoration: none;
+}
 
 
 
