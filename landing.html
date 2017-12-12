@@ -1,53 +1,67 @@
-<!DOCTYPE html>
-<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-        <title>CFB</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Serverless web application example">
-        <meta name="author" content="">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/games.css">
+
+
+  </head>
+
+  <body class="stadium4">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">College Football Picks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls=" navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-    
-    </head>
-    
-    <body class="stadium4">
-    
-        <div class="panel-heading">
-            <div class="dropdown pull-right">
-                <button id="accountLink" class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Account <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="accountLink">
-                    <li><a id="signOut" href="#">Sign out</a></li>
-                </ul>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="picks.html">Picks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Standings</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="button">Sign Out</button>
         </div>
-    
-        <header>
-          <h1>College Football Picks</h1>
-        </header>
-        <section class="form-wrap">
-            <form id="navForm" class="cfbform">
-                <a href="games.html" class="nav-link"><button type="button" class="nav-button">View Games</button></a>
-                <a href="picks.html" class="nav-link"><button type="button" class="nav-button">Make Picks</button></a>
-            </form>
-        </section>
-    
-        <script src="js/vendor/jquery-3.1.0.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
-        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
-        <script src="js/config.js"></script>
-        <script src="js/cognito-auth.js"></script>
-    </body>
+      </div>
+    </nav>
 
+    <section class="form-wrap">
+        <form id="navForm" class="cfbform">
+            <a href="games.html" class="nav-link"><button type="button" class="nav-button">View Games</button></a>
+            <a href="picks.html" class="nav-link"><button type="button" class="nav-button">Make Picks</button></a>
+        </form>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+  </body>
 </html>
